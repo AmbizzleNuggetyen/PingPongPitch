@@ -48,7 +48,6 @@ soundArray.push(wallSound); //add sound to list of sounds
 
 export var paddleSound = new soundFile("punch.m4a");
 soundArray.push(paddleSound);
-paddleSound.player.volume.value = 14;
 
 export var scoreSound = new soundFile("silence.mp3");
 soundArray.push(scoreSound);
@@ -60,8 +59,8 @@ ambientSound.player.volume.value = -20; //turn down volume
 
 export var adventureMusic = new soundFile("sandstorm.mp3");
 soundArray.push(adventureMusic);
-adventureMusic.player.loop = true;
-adventureMusic.player.volume.value = 14;
+adventureMusic.player.loop = true; //turn on looping
+adventureMusic.player.volume.value = 50;
 
 export var villageMusic = new soundFile("silence.mp3");
 soundArray.push(villageMusic);
